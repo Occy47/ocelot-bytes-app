@@ -1,0 +1,39 @@
+:root {
+  --primary: #3a3a3a;
+}
+
+.btn {
+  width: 100px;
+  height: 30px;
+  transform: skew(-20deg);
+  border: 1px solid lime;
+  background: linear-gradient(
+    to right,
+    rgba(21, 21, 21) 0%,
+    rgba(111, 111, 111) 100%
+  );
+  font-family: "Orbitron", sans-serif;
+  font-weight: 400;
+  cursor: pointer;
+  /* transition: transform 0.3s ease; */
+}
+
+.btn:hover {
+  /* transform: translateY(-3px); */
+  color: lime;
+}
+
+.btn--primary--solid {
+  background-color: var(--primary);
+  color: white;
+}
+
+.btn--medium {
+  padding: 10px 20px;
+  font-size: 18px;
+}
+
+.btn--small {
+  padding: 15px 30px;
+  font-size: 20px;
+}

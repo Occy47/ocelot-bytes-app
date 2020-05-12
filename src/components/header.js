@@ -1,33 +1,41 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
+import image from "../images/ocelot-logo.png"
+
+import Navigation from "./navigation"
 
 const Header = ({ siteTitle }) => (
   <header
     style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
+      background: `black`,
     }}
   >
     <div
       style={{
-        margin: `0 auto`,
         maxWidth: 960,
         padding: `1.45rem 1.0875rem`,
       }}
     >
-      <h1 style={{ margin: 0 }}>
+      <h1 style={{ margin: 0, fontFamily: "Orbitron", maxWidth: 500 }}>
         <Link
           to="/"
           style={{
-            color: `white`,
+            color: `lime`,
             textDecoration: `none`,
           }}
         >
           {siteTitle}
         </Link>
+        <img
+          src={image}
+          width="200"
+          height="200"
+          style={{ float: "right" }}
+        ></img>
       </h1>
     </div>
+    <Navigation />
   </header>
 )
 
