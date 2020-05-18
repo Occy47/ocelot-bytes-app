@@ -13,7 +13,7 @@ import Header from "./header"
 
 import "./layout.css"
 
-const height = window.innerHeight - 128 + "px"
+const height = window.innerHeight - 270 + "px"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -39,7 +39,9 @@ const Layout = ({ children }) => {
         }}
       >
         <main>{children}</main>
-        <footer>© {new Date().getFullYear()}, Ocelot bytes</footer>
+        <footer style={{ textAlign: "center", position: "relative", top: 200 }}>
+          © {new Date().getFullYear()}, Ocelot bytes
+        </footer>
       </div>
     </>
   )

@@ -10,12 +10,8 @@ const STYLES = [
 const SIZES = ["btn--small", "btn-medium"]
 
 class NavButton extends React.Component {
-  constructor(props) {
-    super(props)
-  }
-
   render() {
-    const { children, onClick, type, buttonStyle, buttonSize } = this.props
+    const { id, children, onClick, type, buttonStyle, buttonSize } = this.props
 
     const checkButtonStyle = STYLES.includes(buttonStyle)
       ? buttonStyle
@@ -24,6 +20,7 @@ class NavButton extends React.Component {
 
     return (
       <button
+        id={id}
         className={`btn ${checkButtonStyle} ${checkButtonSize}`}
         onClick={onClick}
         type={type}
