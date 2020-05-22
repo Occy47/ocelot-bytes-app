@@ -23,12 +23,17 @@ class Navigation extends React.Component {
     var activeLink = links.getElementsByClassName("active")
 
     var btns = document.getElementsByClassName("btn")
-    var i
-    for (i = 0; i < btns.length; i++) {
-      if (`${btns[i].id}Link` === activeLink[0].id) {
-        btns[i].className += " active"
-      } else {
-        btns[i].className = btns[i].className.replace(" active", "")
+
+    if (window.location.pathname === "/projects/my-guitar-shop") {
+      console.log("do nothing")
+    } else {
+      var i
+      for (i = 0; i < btns.length; i++) {
+        if (`${btns[i].id}Link` === activeLink[0].id) {
+          btns[i].className += " active"
+        } else {
+          btns[i].className = btns[i].className.replace(" active", "")
+        }
       }
     }
   }
