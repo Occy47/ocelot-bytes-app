@@ -3,6 +3,13 @@ import Layout from "../../components/layout"
 import Modal from "../../components/modal"
 import "../../styles/global.css"
 
+import imageOne from "../../images/my-guitar/modal/LandingPage.png"
+import imageTwo from "../../images/my-guitar/modal/HomePage.png"
+import imageThree from "../../images/my-guitar/modal/CartPage.png"
+import imageFour from "../../images/my-guitar/modal/AdminPage.png"
+
+var guitarImages = [imageOne, imageTwo, imageThree, imageFour]
+
 class MyGuitar extends React.Component {
   constructor(props) {
     super(props)
@@ -31,7 +38,7 @@ class MyGuitar extends React.Component {
                 border: "1px solid",
                 borderColor: "#eaf900",
                 backgroundColor: "#00ff0042",
-                width: 221,
+                width: 301,
                 height: 221,
                 padding: 5,
               }}
@@ -42,13 +49,13 @@ class MyGuitar extends React.Component {
                   border: "1px solid",
                   borderColor: "#eaf900",
                   backgroundColor: "#00ff0042",
-                  minWidth: 200,
+                  minWidth: 280,
                   minHeight: 200,
                   position: "relative",
                   top: 5,
-                  left: 5,
+                  cursor: "pointer",
                 }}
-                src="..."
+                src={guitarImages[0]}
                 alt="gallery"
                 onClick={this.showModal}
               />
@@ -101,8 +108,12 @@ class MyGuitar extends React.Component {
               <p>* Ant-design</p>
             </div>
             <div style={{ position: "relative", top: 50 }}>
-              <button className="links--button">Visit page</button>
-              <button className="links--button">Checkout GIT</button>
+              <a href="https://my-guitar-shop.web.app/">
+                <button className="links--button">Visit page</button>
+              </a>
+              <a href="https://github.com/Occy47/my-guitar-shop">
+                <button className="links--button">Checkout GIT</button>
+              </a>
             </div>
           </div>
         </div>
@@ -110,8 +121,8 @@ class MyGuitar extends React.Component {
           id="myModal"
           show={this.state.visible}
           handleClose={this.showModal}
-          imgSrc="..."
           imgAlt="image"
+          images={guitarImages}
         />
       </Layout>
     )

@@ -21,10 +21,11 @@ class Home extends React.Component {
           }}
         >
           <p>
-            Ocelot bytes is a "one man band" front-end web development factory.
+            Ocelot bytes is a "one man band" with an idea of front-end web
+            development.
           </p>
           <p>
-            Primary programing language that I use is javascript with focus on
+            Primary programing language that I use is Javascript with focus on
             React (Gatsby.js), Redux and Google's Firebase.
           </p>
           <p>

@@ -36,7 +36,9 @@ class ProjCard extends React.Component {
 
   changeImageSrc() {
     var i = this.state.imageIndex
-    if (i >= 2) {
+    var imgLen = this.props.images.length - 1
+
+    if (i >= imgLen) {
       this.setState({ imageIndex: 0 })
     } else {
       i++
@@ -62,6 +64,7 @@ class ProjCard extends React.Component {
               src={this.props.images[this.state.imageIndex]}
               onClick={this.clearMyFunction}
               alt="desc"
+              style={{ height: "-webkit-fill-available" }}
             />
           </Link>
         </div>
@@ -85,8 +88,12 @@ class ProjCard extends React.Component {
             top: 20,
           }}
         >
-          <button className="card--button">Visit page</button>
-          <button className="card--button">Check GIT</button>
+          <a href={this.props.pageUrl}>
+            <button className="card--button">Visit page</button>
+          </a>
+          <a href={this.props.gitUrl}>
+            <button className="card--button">Check GIT</button>
+          </a>
         </div>
       </div>
     )
