@@ -68,22 +68,10 @@ class ProjCard extends React.Component {
             />
           </Link>
         </div>
+        <div className="card--title">{this.props.title}</div>
         <div
           style={{
-            fontFamily: "Orbitron",
             textAlign: "center",
-            position: "relative",
-            top: 15,
-          }}
-        >
-          {this.props.title}
-        </div>
-        <div
-          className="flexbox-container"
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
             position: "relative",
             top: 20,
           }}

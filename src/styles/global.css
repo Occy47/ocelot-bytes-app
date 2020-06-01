@@ -20,3 +20,17 @@
 .links--button:hover {
   color: lime;
 }
+
+.pages--title {
+  font-family: "Orbitron", sans-serif;
+  padding: 20px;
+}
+
+.pages--text--box {
+  font-family: "Orbitron", sans-serif;
+  padding: 5px;
+  background-color: #00ff0042;
+  border: 1px solid #eaf900;
+  max-width: 600px;
+  margin-left: 20px;
+}

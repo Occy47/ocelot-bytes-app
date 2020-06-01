@@ -9,17 +9,8 @@ class Home extends React.Component {
     return (
       <Layout>
         <SEO title="Home" />
-        <h3 style={{ fontFamily: "Orbitron", padding: 20 }}>What is it?</h3>
-        <div
-          style={{
-            fontFamily: "Orbitron",
-            border: "1px solid",
-            borderColor: "#eaf900",
-            backgroundColor: "#00ff0042",
-            maxWidth: 600,
-            padding: 5,
-          }}
-        >
+        <h3 className="pages--title">What is it?</h3>
+        <div className="pages--text--box">
           <p>
             Ocelot bytes is a "one man band" with an idea of front-end web
             development.
@@ -44,7 +35,7 @@ class Home extends React.Component {
               top: 60,
             }}
           >
-            <NavButton>More...</NavButton>
+            <button className="links--button">More...</button>
           </Link>
         </div>
       </Layout>

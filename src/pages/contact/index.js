@@ -12,20 +12,7 @@ class Contact extends React.Component {
   render() {
     return (
       <Layout>
-        <h3 style={{ fontFamily: "Orbitron", padding: 20 }}>
-          To contact me please...
-        </h3>
-        {/* <div
-          style={{
-            border: "1px solid",
-            borderColor: "#eaf900",
-            backgroundColor: "#00ff0042",
-            maxWidth: 600,
-            padding: 5,
-          }}
-        >
-          <p>You can send me message</p>
-        </div> */}
+        <h3 className="pages--title">To contact me please...</h3>
         <form name="contact" method="POST" data-netlify="true">
           <p style={{ fontFamily: "Orbitron", fontSize: 15 }}>
             <label>
@@ -33,11 +20,8 @@ class Contact extends React.Component {
               <input
                 type="text"
                 name="name"
+                className="pages--text--box"
                 style={{
-                  backgroundColor: "#004200",
-                  borderStyle: "groove",
-                  borderColor: "yellow",
-                  borderWidth: 1,
                   color: "lime",
                   position: "relative",
                   left: 5,
@@ -51,11 +35,8 @@ class Contact extends React.Component {
               <input
                 type="email"
                 name="email"
+                className="pages--text--box"
                 style={{
-                  backgroundColor: "#004200",
-                  borderStyle: "groove",
-                  borderColor: "yellow",
-                  borderWidth: 1,
                   color: "lime",
                   position: "relative",
                   left: 8,
@@ -68,11 +49,8 @@ class Contact extends React.Component {
               Message:
               <textarea
                 name="message"
+                className="pages--text--box"
                 style={{
-                  backgroundColor: "#004200",
-                  borderStyle: "groove",
-                  borderColor: "yellow",
-                  borderWidth: 1,
                   color: "lime",
                   height: 200,
                   width: 400,
@@ -83,7 +61,13 @@ class Contact extends React.Component {
             </label>
           </p>
           <p style={{ fontFamily: "Orbitron", fontSize: 15 }}>
-            <button type="submit">Send</button>
+            <button
+              className="links--button"
+              type="submit"
+              style={{ position: "relative", left: 112 }}
+            >
+              Send
+            </button>
           </p>
         </form>
       </Layout>

@@ -35,3 +35,10 @@
 .card--button:hover {
   color: lime;
 }
+
+.card--title {
+  font-family: "Orbitron", sans-serif;
+  text-align: center;
+  position: relative;
+  top: 15px;
+}

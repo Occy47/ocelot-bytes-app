@@ -13,16 +13,18 @@ class Projects extends React.Component {
   render() {
     return (
       <Layout>
-        <h3 style={{ fontFamily: "Orbitron", padding: 20 }}>My Projects</h3>
-        <ProjCard
-          id="my-guitar-card"
-          linkId="my-guitar-shopLink"
-          title="My-guitar-shop"
-          link="/projects/my-guitar-shop"
-          images={images}
-          pageUrl="https://my-guitar-shop.web.app/"
-          gitUrl="https://github.com/Occy47/my-guitar-shop"
-        />
+        <h3 className="pages--title">My Projects</h3>
+        <div style={{ marginLeft: 20 }}>
+          <ProjCard
+            id="my-guitar-card"
+            linkId="my-guitar-shopLink"
+            title="My-guitar-shop"
+            link="/projects/my-guitar-shop"
+            images={images}
+            pageUrl="https://my-guitar-shop.web.app/"
+            gitUrl="https://github.com/Occy47/my-guitar-shop"
+          />
+        </div>
       </Layout>
     )
   }

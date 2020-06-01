@@ -28,20 +28,13 @@ class MyGuitar extends React.Component {
   render() {
     return (
       <Layout>
-        <h3 style={{ fontFamily: "Orbitron", padding: 20 }}>My Guitar Shop</h3>
+        <h3 className="pages--title">My Guitar Shop</h3>
         <div className="flex-container" style={{ display: "flex" }}>
           <div>
             <h4 style={{ fontFamily: "Orbitron" }}>Gallery:</h4>
             <div
-              style={{
-                fontFamily: "Orbitron",
-                border: "1px solid",
-                borderColor: "#eaf900",
-                backgroundColor: "#00ff0042",
-                width: 301,
-                height: 221,
-                padding: 5,
-              }}
+              className="pages--text--box"
+              style={{ width: 301, height: 221 }}
             >
               <img
                 style={{
@@ -63,16 +56,7 @@ class MyGuitar extends React.Component {
           </div>
           <div style={{ position: "relative", left: 30 }}>
             <h4 style={{ fontFamily: "Orbitron" }}>Description:</h4>
-            <div
-              style={{
-                fontFamily: "Orbitron",
-                border: "1px solid",
-                borderColor: "#eaf900",
-                backgroundColor: "#00ff0042",
-                maxWidth: 600,
-                padding: 5,
-              }}
-            >
+            <div className="pages--text--box">
               <p>My Guitar Shop is an example of a web shop application.</p>
               <p>
                 It is created in React typescript with Redux for state
@@ -91,16 +75,8 @@ class MyGuitar extends React.Component {
               Technologies used:
             </h4>
             <div
-              style={{
-                fontFamily: "Orbitron",
-                border: "1px solid",
-                borderColor: "#eaf900",
-                backgroundColor: "#00ff0042",
-                maxWidth: 600,
-                padding: 5,
-                position: "relative",
-                top: 20,
-              }}
+              className="pages--text--box"
+              style={{ position: "relative", top: 20 }}
             >
               <p>* React-typescript</p>
               <p>* Redux</p>
