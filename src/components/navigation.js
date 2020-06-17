@@ -47,7 +47,6 @@ class Navigation extends React.Component {
   }
 
   render() {
-    console.log(window.location.pathname.includes("/projects") === true)
     return (
       <div
         id="navbar"
