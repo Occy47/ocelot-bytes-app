@@ -65,7 +65,10 @@ class ProjCard extends React.Component {
               src={this.props.images[this.state.imageIndex]}
               onClick={this.clearMyFunction}
               alt="desc"
-              style={{ height: "-webkit-fill-available" }}
+              style={{
+                height: "100%",
+                height: "100%",
+              }}
             />
           </Link>
         </div>

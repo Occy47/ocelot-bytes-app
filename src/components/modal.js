@@ -79,8 +79,8 @@ class Modal extends React.Component {
                 src={imageGallery[imgIndex]}
                 alt={this.props.imgAlt}
                 style={{
-                  height: "-webkit-fill-available",
-                  width: "-webkit-fill-available",
+                  height: "100%",
+                  width: "100%",
                 }}
               />
             </div>

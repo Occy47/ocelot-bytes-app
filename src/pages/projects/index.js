@@ -96,7 +96,7 @@ class Projects extends React.Component {
               title="Scheduler"
               link="/projects/scheduler-app"
               images={schedulerImages}
-              pageUrl="..."
+              pageUrl="https://cras-scheduler-app.web.app/"
               gitUrl="https://github.com/Occy47/Schedule-app"
             />
           </div>
@@ -107,7 +107,7 @@ class Projects extends React.Component {
               title="Ocelot bytes"
               link="/projects/ocelot-bytes"
               images={noImages}
-              pageUrl="..."
+              pageUrl="https://ocelot-bytes.netlify.app/"
               gitUrl="https://github.com/Occy47/ocelot-bytes-app"
             />
           </div>
