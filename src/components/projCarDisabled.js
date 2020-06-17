@@ -7,11 +7,7 @@ class ProjCardDisabled extends React.Component {
     return (
       <div className="card--dis">
         <div className="card--image--dis">
-          <img
-            src={eyesImage}
-            alt="desc"
-            style={{ height: "-webkit-fill-available" }}
-          />
+          <img src={eyesImage} alt="desc" style={{ height: "100%" }} />
         </div>
         <div className="card--title--dis">Future project</div>
         <div
