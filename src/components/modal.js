@@ -55,7 +55,7 @@ class Modal extends React.Component {
           <span className="close" onClick={this.props.handleClose}>
             &times;
           </span>
-          <p>Some text in the Modal..</p>
+          <p style={{ fontFamily: "Orbitron" }}>{this.props.modalText}</p>
           <div
             className="flex-container"
             style={{

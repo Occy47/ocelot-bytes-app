@@ -1,10 +1,3 @@
-/**
- * Layout component that queries for data
- * with Gatsby's useStaticQuery component
- *
- * See: https://www.gatsbyjs.org/docs/use-static-query/
- */
-
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
@@ -12,8 +5,6 @@ import { useStaticQuery, graphql } from "gatsby"
 import Header from "./header"
 
 import "./layout.css"
-
-const height = window.innerHeight - 270 + "px"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -40,7 +31,9 @@ const Layout = ({ children }) => {
         }}
       >
         <main>{children}</main>
-        <footer style={{ textAlign: "center", position: "relative", top: 200 }}>
+        <footer
+          style={{ textAlign: "center", marginTop: 100, marginBottom: 50 }}
+        >
           © {new Date().getFullYear()}, Ocelot bytes
         </footer>
       </div>

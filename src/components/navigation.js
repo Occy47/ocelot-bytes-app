@@ -3,6 +3,12 @@ import NavButton from "./navButton"
 import { Link } from "gatsby"
 import "./navButton.css"
 
+var projPathNames = [
+  "/projects/my-guitar-shop",
+  "/projects/scheduler-app",
+  "/projects/ocelot-bytes",
+]
+
 class Navigation extends React.Component {
   constructor(props) {
     super(props)
@@ -11,21 +17,23 @@ class Navigation extends React.Component {
       activeTwo: "",
       buttons: null,
     }
-    this.setParentClassToChild = this.setParentClassToChild.bind(this)
+    this.setComponentClassToActive = this.setComponentClassToActive.bind(this)
   }
 
   componentDidMount() {
-    this.setParentClassToChild()
+    this.setComponentClassToActive()
   }
 
-  setParentClassToChild() {
+  setComponentClassToActive() {
     var links = document.getElementById("navbar")
     var activeLink = links.getElementsByClassName("active")
-
     var btns = document.getElementsByClassName("btn")
 
-    if (window.location.pathname === "/projects/my-guitar-shop") {
-      console.log("do nothing")
+    var pathName = window.location.pathname
+
+    if (projPathNames.includes(pathName) === true) {
+      var projectBtn = document.getElementById("projects")
+      projectBtn.className += " active"
     } else {
       var i
       for (i = 0; i < btns.length; i++) {
@@ -39,6 +47,7 @@ class Navigation extends React.Component {
   }
 
   render() {
+    console.log(window.location.pathname.includes("/projects") === true)
     return (
       <div
         id="navbar"

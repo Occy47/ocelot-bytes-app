@@ -1,0 +1,85 @@
+{
+  "projects": {
+    "myGuitarShop": {
+      "description": [
+        {
+          "para": "My Guitar Shop is an example of a web shop application."
+        },
+        {
+          "para": "It is created in React typescript with Redux for state management. Register, Log in and database is handled by Google's Firebase."
+        },
+        {
+          "para": "It has features for sorting, filtering and searching items."
+        },
+        {
+          "para": "In admin section you can CRUD items from database, view users profiles and their shopping history."
+        }
+      ],
+      "tehnologies": [
+        {
+          "para": "* React-typescript"
+        },
+        {
+          "para": "* Redux"
+        },
+        {
+          "para": "* Firebase"
+        },
+        {
+          "para": "* Ant-design"
+        }
+      ],
+      "pageUrl": "https://my-guitar-shop.web.app/",
+      "gitUrl": "https://github.com/Occy47/my-guitar-shop"
+    },
+    "schedulerApp": {
+      "description": [
+        {
+          "para": "Scheduler app is an application made for managing and displaying buisness meetings. It's purpose is to display, on a androidtablet, whether or not the meeting hall is occupied."
+        },
+        {
+          "para": "It is created in React while Google's Firebase is only used for hosting. For backend I used Express.js server with local .json file database as requested by client."
+        },
+        {
+          "para": " "
+        },
+        {
+          "para": "Unfortunately 'Visit page' button is useless because application has private login."
+        }
+      ],
+      "tehnologies": [
+        {
+          "para": "* React"
+        },
+        {
+          "para": "* Firebase"
+        },
+        {
+          "para": "* Express server"
+        }
+      ],
+      "pageUrl": "www.ddd.com",
+      "gitUrl": "https://github.com/Occy47/Schedule-app"
+    },
+    "ocelotBytes": {
+      "description": [
+        {
+          "para": "This web site is static, blog kind of web application. It is made with Gatsby.js and pure CSS."
+        },
+        {
+          "para": "It contains all of my projects with descriptions, images and links to their urls and GIT repositories. For deploying and hosting I used Netlify."
+        }
+      ],
+      "tehnologies": [
+        {
+          "para": "* Gatsby.js"
+        },
+        {
+          "para": "* Netlify"
+        }
+      ],
+      "pageUrl": "www.ddd.com",
+      "gitUrl": "www.asdad.com"
+    }
+  }
+}

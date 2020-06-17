@@ -1,18 +1,22 @@
 import React from "react"
 import Layout from "../../components/layout"
 import Modal from "../../components/modal"
-import "../../styles/global.css"
 import DATABASE from "../../data/database.json"
 import ProjectInfoLayout from "../../components/projInfoLayout"
 
-import imageOne from "../../images/my-guitar/modal/LandingPage.png"
-import imageTwo from "../../images/my-guitar/modal/HomePage.png"
-import imageThree from "../../images/my-guitar/modal/CartPage.png"
-import imageFour from "../../images/my-guitar/modal/AdminPage.png"
+import schedulerImageOne from "../../images/scheduler-app/modal/vaccant.png"
+import schedulerImageTwo from "../../images/scheduler-app/modal/occupied.png"
+import schedulerImageThree from "../../images/scheduler-app/modal/createEvent.png"
+import schedulerImageFour from "../../images/scheduler-app/modal/editEvent.png"
 
-var guitarImages = [imageOne, imageTwo, imageThree, imageFour]
+const schedulerImages = [
+  schedulerImageOne,
+  schedulerImageTwo,
+  schedulerImageThree,
+  schedulerImageFour,
+]
 
-class MyGuitar extends React.Component {
+class Scheduler extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
@@ -28,38 +32,38 @@ class MyGuitar extends React.Component {
   }
 
   render() {
-    var description = DATABASE.projects.myGuitarShop.description.map(
+    var description = DATABASE.projects.schedulerApp.description.map(
       (data, index) => {
         return <p key={index}>{data.para}</p>
       }
     )
-    var tehnologies = DATABASE.projects.myGuitarShop.tehnologies.map(
+    var tehnologies = DATABASE.projects.schedulerApp.tehnologies.map(
       (data, index) => {
         return <p key={index}>{data.para}</p>
       }
     )
     return (
       <Layout>
-        <h3 className="pages--title">My Guitar Shop</h3>
+        <h3 className="pages--title">Scheduler</h3>
         <ProjectInfoLayout
-          gallerySrc={guitarImages[0]}
+          gallerySrc={schedulerImageOne}
           onClick={this.showModal}
           descriptionPara={description}
           techPara={tehnologies}
-          pageUrl={DATABASE.projects.myGuitarShop.pageUrl}
-          gitUrl={DATABASE.projects.myGuitarShop.gitUrl}
+          pageUrl={DATABASE.projects.schedulerApp.pageUrl}
+          gitUrl={DATABASE.projects.schedulerApp.gitUrl}
         />
         <Modal
-          id="guitar-shop-modal"
-          modalText="My Guitar shop"
+          id="scheduler-modal"
+          modalText="Scheduler"
           show={this.state.visible}
           handleClose={this.showModal}
           imgAlt="image"
-          images={guitarImages}
+          images={schedulerImages}
         />
       </Layout>
     )
   }
 }
 
-export default MyGuitar
+export default Scheduler

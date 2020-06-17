@@ -1,0 +1,40 @@
+.card--dis {
+  width: 180px;
+  height: 250px;
+  border: rgb(104, 104, 104) 3px double;
+  margin: 0px;
+  background-color: #96969642;
+}
+
+.card--image--dis {
+  width: 154px;
+  height: 120px;
+  border: rgb(232, 232, 232) 1px solid;
+  position: relative;
+  left: 10px;
+  top: 10px;
+  opacity: 0.1;
+}
+
+.card--button--dis {
+  width: 100px;
+  height: 30px;
+  border: 1px solid rgb(104, 104, 104);
+  color: rgb(121, 121, 121);
+  background: linear-gradient(
+    to right,
+    rgba(21, 21, 21) 0%,
+    rgba(111, 111, 111) 100%
+  );
+  font-family: "Orbitron", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.card--title--dis {
+  font-family: "Orbitron", sans-serif;
+  text-align: center;
+  color: #949494;
+  position: relative;
+  top: 15px;
+}

@@ -31,6 +31,7 @@ class ProjCard extends React.Component {
 
   clearMyFunction() {
     clearInterval(myInterval)
+    this.setState({ imageIndex: 0 })
     console.log("event stopped")
   }
 

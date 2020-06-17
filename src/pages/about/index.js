@@ -1,5 +1,6 @@
 import React from "react"
 import Layout from "../../components/layout"
+import meImage from "../../images/me.png"
 
 class About extends React.Component {
   render() {
@@ -14,7 +15,7 @@ class About extends React.Component {
             marginLeft: 20,
           }}
         >
-          <img src="..." alt="me" />
+          <img src={meImage} alt="me" />
         </div>
 
         <br />
@@ -29,12 +30,12 @@ class About extends React.Component {
             began coding.
           </p>
           <p>
-            Programmig languages that I learn is HTML, CSS and Javascript with
-            focus on React.js. I am familiar with Redux and I used it in couple
-            of my practice projects, while Typescript is still quite new to me,
-            and I'm still learning. Also I was using Google's Firebase in some
-            of my projects for backend. I know basics of GitExtensions and I use
-            it to control my GIT account.
+            Programming languages that I'm learning are HTML, CSS and Javascript
+            with focus on React.js. I am familiar with Redux and I used it in
+            couple of my practice projects, while Typescript is still quite new
+            to me, and I'm still learning. Also I was using Google's Firebase in
+            some of my projects for backend and hosting. I know basics of
+            GitExtensions and I use it to control my GIT repositories.
           </p>
           <p>
             For now my goal is to gather as much practice and expirience in

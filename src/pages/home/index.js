@@ -2,7 +2,6 @@ import React from "react"
 import Layout from "../../components/layout"
 import SEO from "../../components/seo"
 import { Link } from "gatsby"
-import NavButton from "../../components/navButton"
 
 class Home extends React.Component {
   render() {
@@ -20,8 +19,8 @@ class Home extends React.Component {
             React (Gatsby.js), Redux and Google's Firebase.
           </p>
           <p>
-            Future plans are to continue developing my skills in javascript, and
-            to learn new programing languages (most likely React Native and C#).
+            Future plans are to continue developing my skills in React, and to
+            learn new programing languages (most likely React Native and C#).
           </p>
         </div>
         <div
@@ -31,8 +30,8 @@ class Home extends React.Component {
           <Link
             to="/about"
             style={{
-              position: "relative",
-              top: 60,
+              marginTop: 100,
+              marginBottom: 50,
             }}
           >
             <button className="links--button">More...</button>
