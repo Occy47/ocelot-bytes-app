@@ -73,7 +73,7 @@ class Projects extends React.Component {
 
     return (
       <Layout>
-        <h3 className="pages--title">My Projects test</h3>
+        <h3 className="pages--title">My Projects</h3>
         <div
           className="flexbox-container"
           style={{ display: "flex", justifyContent: "center" }}
