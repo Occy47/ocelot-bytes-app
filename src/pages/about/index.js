@@ -1,6 +1,6 @@
 import React from "react"
 import Layout from "../../components/layout"
-import meImage from "../../images/me.png"
+import meImage from "../../images/mee.png"
 
 class About extends React.Component {
   render() {
